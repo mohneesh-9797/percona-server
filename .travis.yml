@@ -93,6 +93,73 @@ matrix:
       env: VERSION=5    BUILD=Debug
       compiler: gcc
 
+    # 2
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=10   BUILD=RelWithDebInfo
+      compiler: clang
+    # 3
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=9    BUILD=Debug
+      compiler: clang
+    # 4
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=8    BUILD=Debug
+      compiler: clang
+    # 5
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=7    BUILD=Debug
+      compiler: clang
+    # 6
+	- arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=6.0  BUILD=Debug
+      compiler: clang
+    # 7
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=5.0  BUILD=Debug
+      compiler: clang
+    # 8
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=4.0  BUILD=Debug
+      compiler: clang
+    # 9
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=10   BUILD=Debug
+      compiler: gcc
+    # 10
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=9    BUILD=Debug
+      compiler: gcc
+    # 11
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=8    BUILD=Debug
+      compiler: gcc
+    # 12
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=7    BUILD=Debug
+      compiler: gcc
+    # 13
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=6    BUILD=Debug
+      compiler: gcc
+    # 14
+    - arch: arm64
+	  if: repo != percona/percona-server OR repo = percona/percona-server AND type IN (push, cron)
+      env: VERSION=5    BUILD=Debug
+      compiler: gcc
+
+
 
     # Configurations for a pull request and after merging for percona/percona-server
     # 1
