@@ -435,7 +435,7 @@ script:
     if [[ "$TRAVIS_REPO_SLUG" == "percona/percona-server" ]]; then
       TIMEOUT_TIME=$((176 * 60 - $SECONDS));
     else
-      TIMEOUT_TIME=$((46 * 60 - $SECONDS));
+      TIMEOUT_TIME=$((176 * 60 - $SECONDS));
     fi;
     echo --- Timeout $TIMEOUT_TIME seconds. CMake took $CMAKE_TIME seconds. Packages updated in $UPDATE_TIME seconds. Initialization time $INIT_TIME seconds.;
     $TIMEOUT_CMD $TIMEOUT_TIME make -j2;
