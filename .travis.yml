@@ -8,7 +8,9 @@ cache:
   timeout: 600
   directories:
     - $TRAVIS_BUILD_DIR/deps     # cache Boost libraries
-
+arch:
+    - amd64
+    - arm64
 env:
   global:
     - PARENT_BRANCH=8.0
